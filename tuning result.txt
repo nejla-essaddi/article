@@ -1,0 +1,380 @@
+✅ Configuration initiale chargée | Dispositif: cpu
+✅ Graines aléatoires fixées à: 42
+✅ Données de base chargées. Plage de dates: 2004-01-01 00:00:00 à 2023-12-31 00:00:00
+
+================================================================================
+🔍 ANALYSE DE LA CORRÉLATION DES CARACTÉRISTIQUES
+================================================================================
+✅ Matrice de corrélation générée : results\feature_correlation_matrix.png
+
+Lancement de l'optimisation pour Informer...
+
+================================================================================
+🚀 DÉMARRAGE DE L'OPTIMISATION DES HYPERPARAMÈTRES
+   Modèle=INFORMER, Fréquence=MONTHLY
+================================================================================
+
+================================================================================
+OPTIMISATION (OPTUNA) POUR INFORMER
+================================================================================
+[I 2025-07-09 16:44:32,713] A new study created in memory with name: no-name-f4eec29c-b8b8-420f-a96b-f4e2ce63cbd1
+[I 2025-07-09 16:44:43,312] Trial 0 finished with value: 0.049097999930381775 and parameters: {'learning_rate': 0.00015215435873378096, 'embed_size': 256, 'd_ff': 512, 'n_heads': 4, 'e_layers': 1, 'dropout': 0.20779519494634263}. Best is trial 0 with value: 0.049097999930381775.
+[I 2025-07-09 16:45:41,624] Trial 1 finished with value: 0.054152533411979675 and parameters: {'learning_rate': 6.244818183576988e-05, 'embed_size': 512, 'd_ff': 2048, 'n_heads': 8, 'e_layers': 2, 'dropout': 0.16644152046730698}. Best is trial 0 with value: 0.049097999930381775.
+[I 2025-07-09 16:46:14,303] Trial 2 finished with value: 0.05747265741229057 and parameters: {'learning_rate': 2.3925362249002207e-05, 'embed_size': 256, 'd_ff': 2048, 'n_heads': 4, 'e_layers': 3, 'dropout': 0.1620104997698138}. Best is trial 0 with value: 0.049097999930381775.
+[I 2025-07-09 16:46:28,698] Trial 3 finished with value: 0.04262087121605873 and parameters: {'learning_rate': 0.00023218731608308984, 'embed_size': 256, 'd_ff': 512, 'n_heads': 8, 'e_layers': 3, 'dropout': 0.12501169053464944}. Best is trial 3 with value: 0.04262087121605873.
+[I 2025-07-09 16:46:37,334] Trial 4 finished with value: 0.05769866704940796 and parameters: {'learning_rate': 0.00023382623784310336, 'embed_size': 256, 'd_ff': 2048, 'n_heads': 4, 'e_layers': 1, 'dropout': 0.3505684491460322}. Best is trial 3 with value: 0.04262087121605873.
+[I 2025-07-09 16:46:38,612] Trial 5 pruned.
+[I 2025-07-09 16:46:40,501] Trial 6 pruned.
+[I 2025-07-09 16:46:41,702] Trial 7 pruned.
+[I 2025-07-09 16:46:42,244] Trial 8 pruned.
+[I 2025-07-09 16:46:42,908] Trial 9 pruned.
+[I 2025-07-09 16:46:43,485] Trial 10 pruned.
+[I 2025-07-09 16:46:54,097] Trial 11 finished with value: 0.03776537999510765 and parameters: {'learning_rate': 0.00016347240548601514, 'embed_size': 256, 'd_ff': 512, 'n_heads': 4, 'e_layers': 3, 'dropout': 0.10109944501612242}. Best is trial 11 with value: 0.03776537999510765.
+[I 2025-07-09 16:47:10,695] Trial 12 finished with value: 0.03123272955417633 and parameters: {'learning_rate': 0.00021719859376352518, 'embed_size': 256, 'd_ff': 512, 'n_heads': 4, 'e_layers': 3, 'dropout': 0.0678447071300842}. Best is trial 12 with value: 0.03123272955417633.
+[I 2025-07-09 16:47:11,865] Trial 13 pruned.
+[I 2025-07-09 16:47:31,710] Trial 14 finished with value: 0.029387036338448524 and parameters: {'learning_rate': 0.00032315644945334364, 'embed_size': 256, 'd_ff': 512, 'n_heads': 4, 'e_layers': 3, 'dropout': 0.10366584143068755}. Best is trial 14 with value: 0.029387036338448524.
+[I 2025-07-09 16:47:34,995] Trial 15 pruned.
+[I 2025-07-09 16:47:35,516] Trial 16 pruned.
+[I 2025-07-09 16:47:36,122] Trial 17 pruned.
+[I 2025-07-09 16:47:37,318] Trial 18 pruned.
+[I 2025-07-09 16:47:37,633] Trial 19 pruned.
+
+✅ Étude d'optimisation terminée.
+--- Meilleur Essai (valeur=0.029387) ---
+  Meilleurs hyperparamètres trouvés:
+    - learning_rate: 0.00032315644945334364
+    - embed_size: 256
+    - d_ff: 512
+    - n_heads: 4
+    - e_layers: 3
+    - dropout: 0.10366584143068755
+
+💡 IMPACT SUR LA PERFORMANCE : Vous pouvez maintenant mettre à jour votre CONFIG avec les meilleurs paramètres et ré-exécuter `run_complete_analysis`.
+
+
+================================================================================
+EXÉCUTION DE L'ANALYSE COMPARATIVE AVEC LES PARAMÈTRES INITIAUX
+================================================================================
+
+================================================================================
+🚀 DÉMARRAGE DE L'ANALYSE: Modèle=INFORMER, Fréquence=MONTHLY
+================================================================================
+
+🤖 Entraînement du modèle...
+Epoch 1/100 | Train Loss: 1.027214 | Val Loss: 0.396712
+Epoch 2/100 | Train Loss: 0.389986 | Val Loss: 0.412353
+Epoch 3/100 | Train Loss: 0.220451 | Val Loss: 0.153608
+Epoch 4/100 | Train Loss: 0.139580 | Val Loss: 0.047308
+Epoch 5/100 | Train Loss: 0.136386 | Val Loss: 0.060962
+Epoch 6/100 | Train Loss: 0.096110 | Val Loss: 0.068532
+Epoch 7/100 | Train Loss: 0.079280 | Val Loss: 0.106512
+Epoch 8/100 | Train Loss: 0.067661 | Val Loss: 0.056065
+Epoch 9/100 | Train Loss: 0.073278 | Val Loss: 0.067399
+Epoch 10/100 | Train Loss: 0.068966 | Val Loss: 0.053308
+Epoch 11/100 | Train Loss: 0.081666 | Val Loss: 0.051149
+Epoch 12/100 | Train Loss: 0.069637 | Val Loss: 0.065818
+Epoch 13/100 | Train Loss: 0.078738 | Val Loss: 0.046328
+Epoch 14/100 | Train Loss: 0.065485 | Val Loss: 0.062443
+Epoch 15/100 | Train Loss: 0.051941 | Val Loss: 0.046715
+Epoch 16/100 | Train Loss: 0.051218 | Val Loss: 0.042700
+Epoch 17/100 | Train Loss: 0.044772 | Val Loss: 0.060436
+Epoch 18/100 | Train Loss: 0.054727 | Val Loss: 0.058108
+Epoch 19/100 | Train Loss: 0.051580 | Val Loss: 0.034367
+Epoch 20/100 | Train Loss: 0.051249 | Val Loss: 0.036858
+Epoch 21/100 | Train Loss: 0.039195 | Val Loss: 0.049348
+Epoch 22/100 | Train Loss: 0.042912 | Val Loss: 0.042623
+Epoch 23/100 | Train Loss: 0.050714 | Val Loss: 0.036049
+Epoch 24/100 | Train Loss: 0.049968 | Val Loss: 0.053497
+Epoch 25/100 | Train Loss: 0.045944 | Val Loss: 0.043720
+Epoch 26/100 | Train Loss: 0.049872 | Val Loss: 0.030784
+Epoch 27/100 | Train Loss: 0.052009 | Val Loss: 0.064893
+Epoch 28/100 | Train Loss: 0.036837 | Val Loss: 0.058733
+Epoch 29/100 | Train Loss: 0.035667 | Val Loss: 0.035017
+Epoch 30/100 | Train Loss: 0.037957 | Val Loss: 0.053530
+Epoch 31/100 | Train Loss: 0.048222 | Val Loss: 0.060910
+Epoch 32/100 | Train Loss: 0.052675 | Val Loss: 0.041186
+Epoch 33/100 | Train Loss: 0.052654 | Val Loss: 0.038736
+Epoch 34/100 | Train Loss: 0.042810 | Val Loss: 0.034008
+Epoch 35/100 | Train Loss: 0.040679 | Val Loss: 0.040668
+Epoch 36/100 | Train Loss: 0.035997 | Val Loss: 0.057186
+Epoch 37/100 | Train Loss: 0.039154 | Val Loss: 0.036146
+Epoch 38/100 | Train Loss: 0.038436 | Val Loss: 0.046052
+Epoch 39/100 | Train Loss: 0.030188 | Val Loss: 0.032551
+Epoch 40/100 | Train Loss: 0.032406 | Val Loss: 0.048427
+Epoch 41/100 | Train Loss: 0.039572 | Val Loss: 0.036815
+Epoch 42/100 | Train Loss: 0.041676 | Val Loss: 0.042474
+Epoch 43/100 | Train Loss: 0.040554 | Val Loss: 0.029243
+Epoch 44/100 | Train Loss: 0.041086 | Val Loss: 0.052450
+Epoch 45/100 | Train Loss: 0.040603 | Val Loss: 0.062555
+Epoch 46/100 | Train Loss: 0.037118 | Val Loss: 0.052898
+Epoch 47/100 | Train Loss: 0.039546 | Val Loss: 0.059953
+Epoch 48/100 | Train Loss: 0.041068 | Val Loss: 0.037056
+Epoch 49/100 | Train Loss: 0.038531 | Val Loss: 0.068447
+Epoch 50/100 | Train Loss: 0.039662 | Val Loss: 0.046573
+Epoch 51/100 | Train Loss: 0.033964 | Val Loss: 0.033306
+Epoch 52/100 | Train Loss: 0.028775 | Val Loss: 0.040355
+Epoch 53/100 | Train Loss: 0.023679 | Val Loss: 0.039602
+Epoch 54/100 | Train Loss: 0.035111 | Val Loss: 0.038375
+Epoch 55/100 | Train Loss: 0.032384 | Val Loss: 0.044296
+Epoch 56/100 | Train Loss: 0.029895 | Val Loss: 0.093379
+Epoch 57/100 | Train Loss: 0.066599 | Val Loss: 0.033143
+Epoch 58/100 | Train Loss: 0.045641 | Val Loss: 0.083452
+Epoch 59/100 | Train Loss: 0.048464 | Val Loss: 0.036224
+Epoch 60/100 | Train Loss: 0.039312 | Val Loss: 0.083151
+Epoch 61/100 | Train Loss: 0.045044 | Val Loss: 0.049464
+Epoch 62/100 | Train Loss: 0.039585 | Val Loss: 0.062035
+Epoch 63/100 | Train Loss: 0.048243 | Val Loss: 0.064171
+Epoch 64/100 | Train Loss: 0.043692 | Val Loss: 0.049831
+Epoch 65/100 | Train Loss: 0.032352 | Val Loss: 0.056735
+Epoch 66/100 | Train Loss: 0.037029 | Val Loss: 0.049453
+Epoch 67/100 | Train Loss: 0.025244 | Val Loss: 0.037457
+Epoch 68/100 | Train Loss: 0.030494 | Val Loss: 0.045853
+Epoch 69/100 | Train Loss: 0.031427 | Val Loss: 0.031041
+Epoch 70/100 | Train Loss: 0.030683 | Val Loss: 0.045046
+Epoch 71/100 | Train Loss: 0.032946 | Val Loss: 0.060792
+Epoch 72/100 | Train Loss: 0.038165 | Val Loss: 0.037251
+Epoch 73/100 | Train Loss: 0.038329 | Val Loss: 0.039684
+Epoch 74/100 | Train Loss: 0.030992 | Val Loss: 0.061387
+Epoch 75/100 | Train Loss: 0.023697 | Val Loss: 0.029707
+Epoch 76/100 | Train Loss: 0.024061 | Val Loss: 0.042027
+Epoch 77/100 | Train Loss: 0.027343 | Val Loss: 0.039531
+Epoch 78/100 | Train Loss: 0.021531 | Val Loss: 0.043831
+Epoch 79/100 | Train Loss: 0.025594 | Val Loss: 0.048055
+Epoch 80/100 | Train Loss: 0.028016 | Val Loss: 0.044799
+Epoch 81/100 | Train Loss: 0.022911 | Val Loss: 0.055923
+Epoch 82/100 | Train Loss: 0.020201 | Val Loss: 0.044630
+Epoch 83/100 | Train Loss: 0.024690 | Val Loss: 0.037846
+Epoch 84/100 | Train Loss: 0.018789 | Val Loss: 0.054682
+Epoch 85/100 | Train Loss: 0.022821 | Val Loss: 0.044868
+Epoch 86/100 | Train Loss: 0.021204 | Val Loss: 0.048780
+Epoch 87/100 | Train Loss: 0.020065 | Val Loss: 0.038467
+Epoch 88/100 | Train Loss: 0.024685 | Val Loss: 0.047276
+Epoch 89/100 | Train Loss: 0.026168 | Val Loss: 0.037567
+Epoch 90/100 | Train Loss: 0.022450 | Val Loss: 0.055232
+Epoch 91/100 | Train Loss: 0.027419 | Val Loss: 0.048320
+Epoch 92/100 | Train Loss: 0.020751 | Val Loss: 0.034477
+Epoch 93/100 | Train Loss: 0.018299 | Val Loss: 0.061878
+Epoch 94/100 | Train Loss: 0.021877 | Val Loss: 0.035102
+Epoch 95/100 | Train Loss: 0.022050 | Val Loss: 0.045720
+Epoch 96/100 | Train Loss: 0.022702 | Val Loss: 0.051673
+Epoch 97/100 | Train Loss: 0.024670 | Val Loss: 0.045133
+Epoch 98/100 | Train Loss: 0.018772 | Val Loss: 0.051324
+Epoch 99/100 | Train Loss: 0.015250 | Val Loss: 0.034540
+Epoch 100/100 | Train Loss: 0.018732 | Val Loss: 0.049371
+
+--- Métriques Informer (Test Set) ---
+ {'test_mae': 335.6289830774222, 'test_rmse': 406.28891114780896, 'test_r2': 0.9477512971550794, 'test_mape': 6.546994267796288}
+
+--- Résultats de la Simulation de Monte Carlo ---
+Mean: 2824.94
+Median: 2817.15
+Std: 354.38
+CI_95: [1825.73, 3270.22]
+
+================================================================================
+🚀 DÉMARRAGE DE L'OPTIMISATION DES HYPERPARAMÈTRES
+   Modèle=LSTM, Fréquence=MONTHLY
+================================================================================
+
+================================================================================
+OPTIMISATION (GRID SEARCH) POUR LSTM
+================================================================================
+Fitting 3 folds for each of 16 candidates, totalling 48 fits
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  19.3s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  19.3s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  19.3s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  20.2s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  19.2s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  19.6s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  20.3s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.1s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.6s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  20.7s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  20.5s
+[CV] END batch_size=32, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  20.6s
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.0s
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.9s
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.2s
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  20.6s
+WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000181EC560CA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  19.4s
+WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001CEDDB0ACA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  19.7s
+WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000018D3A40EE50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  21.0s
+WARNING:tensorflow:5 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000194C058FE50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.6s
+WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000181F2519700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  22.5s
+WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001CEE28BF700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  22.8s
+WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000018D3F2EA430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  24.1s
+WARNING:tensorflow:6 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000194C40B3700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.5s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  19.0s
+[CV] END batch_size=32, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time= 3.6min
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=32; total time=  21.2s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  17.4s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  17.7s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  17.8s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.001, model__lstm_units_1=64; total time=  17.9s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  19.0s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  19.2s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  19.2s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  19.2s
+[CV] END batch_size=64, model__dropout=0.2, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  17.7s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  18.1s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.1s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=32; total time=  20.2s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  19.2s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  19.8s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.001, model__lstm_units_1=64; total time=  20.7s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.5s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.3s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=32; total time=  20.0s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  19.1s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  20.1s
+[CV] END batch_size=64, model__dropout=0.3, model__learning_rate=0.0005, model__lstm_units_1=64; total time=  10.8s
+
+--- Meilleurs Hyperparamètres Trouvés ---
+Meilleur score (RMSE) : 0.1976
+Meilleurs Paramètres:
+  - batch_size: 32
+  - model__dropout: 0.2
+  - model__learning_rate: 0.001
+  - model__lstm_units_1: 64
+
+💡 IMPACT SUR LA PERFORMANCE : Vous pouvez maintenant mettre à jour votre CONFIG avec les meilleurs paramètres et ré-exécuter `run_complete_analysis`.
+
+================================================================================
+🚀 DÉMARRAGE DE L'ANALYSE: Modèle=LSTM, Fréquence=MONTHLY
+================================================================================
+
+🤖 Entraînement du modèle...
+Epoch 1/100
+5/5 [==============================] - 5s 241ms/step - loss: 0.9865 - mae: 0.8761 - val_loss: 0.8981 - val_mae: 0.8361 - lr: 0.0010
+Epoch 2/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.8907 - mae: 0.8345 - val_loss: 0.7932 - val_mae: 0.7819 - lr: 0.0010
+Epoch 3/100
+5/5 [==============================] - 0s 25ms/step - loss: 0.7806 - mae: 0.7783 - val_loss: 0.6608 - val_mae: 0.7054 - lr: 0.0010
+Epoch 4/100
+5/5 [==============================] - 0s 27ms/step - loss: 0.5998 - mae: 0.6776 - val_loss: 0.5029 - val_mae: 0.6154 - lr: 0.0010
+Epoch 5/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.4163 - mae: 0.5493 - val_loss: 0.3588 - val_mae: 0.4884 - lr: 0.0010
+Epoch 6/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.2428 - mae: 0.3992 - val_loss: 0.2326 - val_mae: 0.4046 - lr: 0.0010
+Epoch 7/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.1549 - mae: 0.3205 - val_loss: 0.1761 - val_mae: 0.3629 - lr: 0.0010
+Epoch 8/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.1328 - mae: 0.2969 - val_loss: 0.1227 - val_mae: 0.3098 - lr: 0.0010
+Epoch 9/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.1312 - mae: 0.2906 - val_loss: 0.0928 - val_mae: 0.2690 - lr: 0.0010
+Epoch 10/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0721 - mae: 0.2129 - val_loss: 0.0844 - val_mae: 0.2386 - lr: 0.0010
+Epoch 11/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0820 - mae: 0.2291 - val_loss: 0.0768 - val_mae: 0.2133 - lr: 0.0010
+Epoch 12/100
+5/5 [==============================] - 0s 27ms/step - loss: 0.0699 - mae: 0.2134 - val_loss: 0.0718 - val_mae: 0.2062 - lr: 0.0010
+Epoch 13/100
+5/5 [==============================] - 0s 25ms/step - loss: 0.0698 - mae: 0.2110 - val_loss: 0.0573 - val_mae: 0.1926 - lr: 0.0010
+Epoch 14/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0676 - mae: 0.2084 - val_loss: 0.0461 - val_mae: 0.1723 - lr: 0.0010
+Epoch 15/100
+5/5 [==============================] - 0s 25ms/step - loss: 0.0578 - mae: 0.1923 - val_loss: 0.0560 - val_mae: 0.1860 - lr: 0.0010
+Epoch 16/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0664 - mae: 0.2091 - val_loss: 0.0679 - val_mae: 0.2044 - lr: 0.0010
+Epoch 17/100
+5/5 [==============================] - 0s 25ms/step - loss: 0.0672 - mae: 0.2059 - val_loss: 0.0523 - val_mae: 0.1781 - lr: 0.0010
+Epoch 18/100
+5/5 [==============================] - 0s 25ms/step - loss: 0.0582 - mae: 0.1922 - val_loss: 0.0488 - val_mae: 0.1718 - lr: 0.0010
+Epoch 19/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0521 - mae: 0.1831 - val_loss: 0.0533 - val_mae: 0.1796 - lr: 0.0010
+Epoch 20/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0675 - mae: 0.2021 - val_loss: 0.0424 - val_mae: 0.1635 - lr: 0.0010
+Epoch 21/100
+5/5 [==============================] - 0s 26ms/step - loss: 0.0533 - mae: 0.1829 - val_loss: 0.0408 - val_mae: 0.1621 - lr: 0.0010
+Epoch 22/100
+5/5 [==============================] - 0s 28ms/step - loss: 0.0638 - mae: 0.1948 - val_loss: 0.0595 - val_mae: 0.1960 - lr: 0.0010
+Epoch 23/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0532 - mae: 0.1873 - val_loss: 0.0433 - val_mae: 0.1659 - lr: 0.0010
+Epoch 24/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0546 - mae: 0.1884 - val_loss: 0.0546 - val_mae: 0.1829 - lr: 0.0010
+Epoch 25/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0549 - mae: 0.1819 - val_loss: 0.0464 - val_mae: 0.1692 - lr: 0.0010
+Epoch 26/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0512 - mae: 0.1762 - val_loss: 0.0374 - val_mae: 0.1539 - lr: 0.0010
+Epoch 27/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0489 - mae: 0.1738 - val_loss: 0.0596 - val_mae: 0.1968 - lr: 0.0010
+Epoch 28/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0583 - mae: 0.1957 - val_loss: 0.0407 - val_mae: 0.1582 - lr: 0.0010
+Epoch 29/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0550 - mae: 0.1891 - val_loss: 0.0400 - val_mae: 0.1579 - lr: 0.0010
+Epoch 30/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0420 - mae: 0.1641 - val_loss: 0.0517 - val_mae: 0.1776 - lr: 0.0010
+Epoch 31/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0572 - mae: 0.1902 - val_loss: 0.0422 - val_mae: 0.1635 - lr: 0.0010
+Epoch 32/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0453 - mae: 0.1731 - val_loss: 0.0481 - val_mae: 0.1757 - lr: 0.0010
+Epoch 33/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0442 - mae: 0.1758 - val_loss: 0.0461 - val_mae: 0.1670 - lr: 0.0010
+Epoch 34/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0488 - mae: 0.1778 - val_loss: 0.0320 - val_mae: 0.1472 - lr: 0.0010
+Epoch 35/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0443 - mae: 0.1677 - val_loss: 0.0401 - val_mae: 0.1552 - lr: 0.0010
+Epoch 36/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0509 - mae: 0.1762 - val_loss: 0.0465 - val_mae: 0.1707 - lr: 0.0010
+Epoch 37/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0394 - mae: 0.1579 - val_loss: 0.0369 - val_mae: 0.1547 - lr: 0.0010
+Epoch 38/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0427 - mae: 0.1683 - val_loss: 0.0393 - val_mae: 0.1555 - lr: 0.0010
+Epoch 39/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0407 - mae: 0.1605 - val_loss: 0.0377 - val_mae: 0.1522 - lr: 0.0010
+Epoch 40/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0469 - mae: 0.1717 - val_loss: 0.0323 - val_mae: 0.1446 - lr: 0.0010
+Epoch 41/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0450 - mae: 0.1713 - val_loss: 0.0394 - val_mae: 0.1579 - lr: 0.0010
+Epoch 42/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0490 - mae: 0.1800 - val_loss: 0.0425 - val_mae: 0.1617 - lr: 0.0010
+Epoch 43/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0482 - mae: 0.1741 - val_loss: 0.0388 - val_mae: 0.1546 - lr: 0.0010
+Epoch 44/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0440 - mae: 0.1613 - val_loss: 0.0323 - val_mae: 0.1441 - lr: 0.0010
+Epoch 45/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0461 - mae: 0.1691 - val_loss: 0.0335 - val_mae: 0.1460 - lr: 1.0000e-04
+Epoch 46/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0417 - mae: 0.1596 - val_loss: 0.0359 - val_mae: 0.1510 - lr: 1.0000e-04
+Epoch 47/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0485 - mae: 0.1785 - val_loss: 0.0386 - val_mae: 0.1557 - lr: 1.0000e-04
+Epoch 48/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0430 - mae: 0.1608 - val_loss: 0.0397 - val_mae: 0.1577 - lr: 1.0000e-04
+Epoch 49/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0421 - mae: 0.1679 - val_loss: 0.0392 - val_mae: 0.1568 - lr: 1.0000e-04
+Epoch 50/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0356 - mae: 0.1539 - val_loss: 0.0396 - val_mae: 0.1571 - lr: 1.0000e-04
+Epoch 51/100
+5/5 [==============================] - 0s 20ms/step - loss: 0.0474 - mae: 0.1654 - val_loss: 0.0395 - val_mae: 0.1570 - lr: 1.0000e-04
+Epoch 52/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0476 - mae: 0.1760 - val_loss: 0.0395 - val_mae: 0.1578 - lr: 1.0000e-04
+Epoch 53/100
+5/5 [==============================] - 0s 21ms/step - loss: 0.0421 - mae: 0.1707 - val_loss: 0.0382 - val_mae: 0.1560 - lr: 1.0000e-04
+Epoch 54/100
+5/5 [==============================] - 0s 22ms/step - loss: 0.0445 - mae: 0.1646 - val_loss: 0.0380 - val_mae: 0.1556 - lr: 1.0000e-04
+
+--- Métriques LSTM (Test Set) ---
+ {'test_mae': 462.78042061840875, 'test_rmse': 560.2086113295975, 'test_r2': 0.8925685132832346, 'test_mape': 8.266962890038764}
+
+--- Résultats de la Simulation de Monte Carlo ---
+Mean: 3468.41
+Median: 3520.09
+Std: 404.48
+CI_95: [2667.05, 4345.07]
+
+================================================================================
+📈 RÉSUMÉ COMPARATIF DES PERFORMANCES
+================================================================================
+   model timeframe   test_mae  test_rmse  test_r2  test_mape
+INFORMER   Monthly 335.628983 406.288911 0.947751   6.546994
+    LSTM   Monthly 462.780421 560.208611 0.892569   8.266963
+
+✅ Rapport de synthèse sauvegardé.
