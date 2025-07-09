@@ -1,0 +1,7 @@
+Hyperparamètres Optimisés pour INFORMER (Monthly):
+    - learning_rate: 0.00017647794747620654
+    - embed_size: 256
+    - d_ff: 1024
+    - n_heads: 4
+    - e_layers: 2
+    - dropout: 0.05737746109268116

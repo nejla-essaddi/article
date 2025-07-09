@@ -1,0 +1,5 @@
+Hyperparamètres Optimisés pour LSTM (Monthly):
+  batch_size: 32
+  dropout: 0.2
+  learning_rate: 0.001
+  lstm_units_1: 64

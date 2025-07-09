@@ -1,0 +1,3 @@
+   model timeframe   test_mae  test_rmse  test_r2  test_mape
+INFORMER   Monthly 308.401915 375.392399 0.955396   5.833877
+    LSTM   Monthly 438.546858 535.494997 0.901838   7.761764
